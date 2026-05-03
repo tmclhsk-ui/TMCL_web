@@ -8,7 +8,8 @@
   :root{--bg:#0a0e1a;--bg2:#10162a;--accent:#e05a2b;--blue:#2b7be0;--text:#e8eaf0;--muted:#7a8099;--border:#1e2740;--card:#131929;}
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:auto;}
-  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',sans-serif;font-size:24px;line-height:1.7;}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',sans-serif;font-size:24px !important;line-height:1.7;}
+  body *{font-size:inherit;}
 
   /* NAV */
   nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(10,14,26,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
