@@ -13,7 +13,8 @@
   /* NAV */
   nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(10,14,26,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
   .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:64px;}
-  .nav-logo{font-size:1.3rem;font-weight:700;letter-spacing:2px;color:#fff;display:flex;align-items:center;gap:.5rem;}
+  .nav-logo{font-size:1.6rem;font-weight:900;letter-spacing:3px;display:flex;align-items:center;gap:.5rem;}
+  .nav-logo-text{background:linear-gradient(90deg,#2b7be0 0%,#e05a2b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
   .nav-logo span{color:var(--accent);}
   .nav-logo img{height:36px;width:auto;filter:brightness(1.1);}
   .nav-links{display:flex;gap:2rem;list-style:none;}
@@ -163,7 +164,7 @@
   <div class="nav-inner">
     <div class="nav-logo">
       <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDFZjkWv3IX8iOt256h6PtyOBClMmpZnNt4VbXgNkVqak_p8pDI8UVpyMVmPhUsIBcJ5PqbjGvEW9FJJzv5-2JGezFPskGELkChh5JNoqGDWAjBgUv5a5LwGhsTSRzt3pvbvhCzAzNnFxdoZ1apZ1opA5cnAR-L7fDhwC6EwMrICrAhMaWhS9vx-zk=w80" alt="TMCL logo"/>
-      TMCL
+      <span class="nav-logo-text">TMCL</span>
     </div>
     <ul class="nav-links">
       <li><a href="#home" onclick="showSection('#home');return false;">Home</a></li>
