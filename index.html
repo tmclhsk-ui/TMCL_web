@@ -41,7 +41,7 @@ nav {
   padding: 0 2rem; height: 68px;
 }
 .nav-logo-wrap { display: flex; align-items: center; gap: .6rem; }
-.nav-logo-wrap img { height: 38px; width: auto; }
+.nav-logo-wrap img { height: 44px; width: auto; border-radius: .3rem; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
   color: #7a8099; text-decoration: none;
@@ -89,8 +89,7 @@ section { display: none; padding: 6rem 2rem; }
 .hero-title .hl-red  { color: #e05a2b; }
 .hero-logo-img {
   height: 130px; width: auto;
-  filter: brightness(.95) saturate(.85) hue-rotate(190deg);
-  opacity: .9; flex-shrink: 0;
+  opacity: .92; flex-shrink: 0;
 }
 .hero-sub { color: #7a8099; font-size: 21px; max-width: 600px; margin: 0 auto 2rem; }
 .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
@@ -115,13 +114,14 @@ section { display: none; padding: 6rem 2rem; }
   border-radius: .8rem; overflow: hidden;
   border: 1px solid #1e2740; background: #131929;
 }
-.hero-equip-img-wrap { height: 220px; overflow: hidden; }
+.hero-equip-img-wrap { height: 240px; overflow: hidden; background: #131929; padding: 1rem; }
 .hero-equip-img-wrap img {
-  width: 100%; height: 100%; object-fit: cover;
-  filter: brightness(.6) saturate(.5) hue-rotate(200deg); transition: all .4s;
+  width: 100%; height: 100%; object-fit: contain;
+  filter: invert(1) hue-rotate(180deg) saturate(0.6) brightness(0.75);
+  transition: all .4s; background: #131929;
 }
 .hero-equip-card:hover .hero-equip-img-wrap img {
-  filter: brightness(.75) saturate(.7) hue-rotate(200deg);
+  filter: invert(1) hue-rotate(180deg) saturate(0.9) brightness(0.9);
   transform: scale(1.03);
 }
 .hero-equip-label {
@@ -300,7 +300,7 @@ footer {
 <nav>
   <div class="nav-inner">
     <div class="nav-logo-wrap">
-      <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDFZjkWv3IX8iOt256h6PtyOBClMmpZnNt4VbXgNkVqak_p8pDI8UVpyMVmPhUsIBcJ5PqbjGvEW9FJJzv5-2JGezFPskGELkChh5JNoqGDWAjBgUv5a5LwGhsTSRzt3pvbvhCzAzNnFxdoZ1apZ1opA5cnAR-L7fDhwC6EwMrICrAhMaWhS9vx-zk=w80" alt="TMCL logo"/>
+      <img src="images/실험실_로고_1.png" alt="TMCL logo"/>
       <span class="tmcl-logo">TMCL</span>
     </div>
     <ul class="nav-links">
@@ -325,7 +325,7 @@ footer {
         <span class="hl-blue">Thermal Management</span><br>&amp;
         <span class="hl-red">Control</span> Lab
       </h1>
-      <img class="hero-logo-img" src="https://lh3.googleusercontent.com/sitesv/AA5AbUDh497ifw-t9L0faB2__31E_7PRGgLx4X2vLQBQ1SzTausgJ0Dv0iLLW9Ip8-EgkjMxMljv2tgaKiuoRsjqOV5QRuunPt7_aL4yPr-V9qgMi6ltx-wkYwQ6g9L468DKZv3lvp6oYlqi2bkbsGMxC6jGMDR5-gnHEZskd5ngfwz1ck1IpaxvPdHKOd39hBOxf_kOHlWaUjCM7vemAts0HjYn6lKN_hKGrExO=w400" alt="TMCL lab logo"/>
+      <img class="hero-logo-img" src="images/실험실_로고_2.png" alt="TMCL lab logo"/>
     </div>
     <p class="hero-sub">We conduct research on thermal energy systems and control logic — heat pump systems, heat exchangers, and 1-D analytical &amp; experimental studies.</p>
     <div class="hero-cta">
@@ -337,13 +337,13 @@ footer {
     <div class="hero-equip-grid">
       <div class="hero-equip-card">
         <div class="hero-equip-img-wrap">
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUClQ4sPplVzoG2DelSAsArY5E8DF0O0pWztAie3Wl-9fisq8Kd5gf7p7tvw8Z6lEaQrwgGGqZrdtOYcJPIvDhEboktyKOn6W4pCFOUDYEsC_8YczbPJ0oLqlB_paHEhX-1RXohpswwzoG0sSQQt6KVpM3gd2rDavJnrHXQa3PXXQTiX1FappWhSRpOKo9TsUor7Yc4tAWe5p88XEVfheOy-fDU2bFIRNFBA=w800" alt="Heat pump types" loading="lazy"/>
+          <img src="images/히트펌프_종류.png" alt="Heat pump types" loading="lazy"/>
         </div>
         <div class="hero-equip-label">Heat Pump Systems</div>
       </div>
       <div class="hero-equip-card">
         <div class="hero-equip-img-wrap">
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDMrI0HLGYLhSdgimmpt6Edal2UOtv6Kx6fB3DiSbCIB8i8K2bMWEQeIsPWCYay1ZrZCML1VTlrjGg5qbsc2-VlKBSk1oJIuK-sRutqhNRxYEPIeEhPkY-Xa7IonIkbbA-9kmE8lkMNqhaGbANN_MHqicCcHMmiQuhOcEmfbKOhNFFFaVSWIqgaIijcJMMEJOgycrzfd2tPaIjZ2gLdHv1XB9jyv3w1kXGa=w800" alt="Heat exchanger types" loading="lazy"/>
+          <img src="images/열교환기_종류.png" alt="Heat exchanger types" loading="lazy"/>
         </div>
         <div class="hero-equip-label">Heat Exchanger Design</div>
       </div>
